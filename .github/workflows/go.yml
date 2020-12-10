@@ -32,5 +32,6 @@ jobs:
     - name: Build
       run: go build -v ./...
 
-    - name: Test
-      run: go test -v ./...
+  
+    - name: Build Debian package
+      uses: dawidd6/action-debian-package@v1.2.0
