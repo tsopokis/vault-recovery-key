@@ -6,11 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: wangyoucao577/go-release-action
+    - uses: wangyoucao577/go-release-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
-        # OS target: darwin, freebsd, linux, and so on
         goarch: amd64 
         sha256sum: TRUE
         overwrite: TRUE
