@@ -1,4 +1,7 @@
-on: release
+on: 
+  release:
+    types: [created]
+    
 name: Go Release Binaries  
 jobs:
   release-linux-amd64:
